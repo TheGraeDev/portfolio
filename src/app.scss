@@ -1,0 +1,21 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: lightpink;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //for some reason this only works for firefox
+        &::-webkit-scrollbar{display: none;} // adding this to the code enables the scroll bar to disappear in other browsers
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        } //this part of the code refers to each element inside the sections such as the intro,contact,testimonials and works section
+    }
+}
