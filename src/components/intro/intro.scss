@@ -1,1 +1,31 @@
-.intro{ background-color: lightsalmon;}
+.intro{ 
+    
+    background-color: rgb(253, 253, 253); //base colour for the background so this is the standard colour for this section
+    display: flex; // this defines that the container is a flex container
+
+    .left{// i believe this is calling the class that was created in the intro.jsx file called "left"
+        flex: 0.5; //flex basically controls how the item we created fills the space we created; in this case it occupies half
+        overflow: hidden; //if the image is overflowing this hides that and only shows a set part of the image
+
+        .imageContainer{
+            // this section practically contains the size of the image and you can control its height and width
+            width: 1000px;
+            height: 1000px;
+
+            img{ //gives you finer control of the image itself so you can edit it to fit the square as you see fit
+                width: 100%;
+                height: 90%; // reduced the size down due to the image being a little to tall
+            }
+
+        }
+    }
+
+    .right{
+        flex: 0.5; // it controls how much space is used in the area we have created
+        background-color: darkblue; // changes the right side base colour of the same section into darkblue
+    }
+
+
+
+
+}
