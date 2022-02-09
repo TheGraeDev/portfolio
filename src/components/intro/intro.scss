@@ -1,31 +1,65 @@
-.intro{ 
-    
-    background-color: rgb(253, 253, 253); //base colour for the background so this is the standard colour for this section
-    display: flex; // this defines that the container is a flex container
+.intro {
+  background-color: rgb(253,253,253); //base colour for the background so this is the standard colour for this section
+  display: flex; // this defines that the container is a flex container
 
-    .left{// i believe this is calling the class that was created in the intro.jsx file called "left"
-        flex: 0.5; //flex basically controls how the item we created fills the space we created; in this case it occupies half
-        overflow: hidden; //if the image is overflowing this hides that and only shows a set part of the image
+  .left {
+    // i believe this is calling the class that was created in the intro.jsx file called "left"
+    flex: 0.5; //flex basically controls how the item we created fills the space we created; in this case it occupies half
+    overflow: hidden; //if the image is overflowing this hides that and only shows a set part of the image
 
-        .imageContainer{
-            // this section practically contains the size of the image and you can control its height and width
-            width: 1000px;
-            height: 1000px;
+    .imageContainer {
+      // this section practically contains the size of the image and you can control its height and width
+      width: 1000px;
+      height: 1000px;
 
-            img{ //gives you finer control of the image itself so you can edit it to fit the square as you see fit
-                width: 100%;
-                height: 90%; // reduced the size down due to the image being a little to tall
-            }
+      img {
+        //gives you finer control of the image itself so you can edit it to fit the square as you see fit
+        width: 100%;
+        height: 90%; // reduced the size down due to the image being a little to tall
+      }
+    }
+  }
 
-        }
+  .right {
+    flex: 0.5; // it controls how much space is used in the area we have created
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px; // adds 50 px space between the border and content on the left side
+      display: flex; // this defines that the container is a flex container
+      flex-direction: column; // The flex container is facing in a column like direction
+      justify-content: center; // This brings the content more into the center
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0; // Top and bottom margins are 10px, while left and right are 0
+      }
+      h2 {
+        font-size: 35px;
+      }
+      h3 {
+        font-size: 30px;
+      }
     }
 
-    .right{
-        flex: 0.5; // it controls how much space is used in the area we have created
-        background-color: darkblue; // changes the right side base colour of the same section into darkblue
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink{
+          100%
+          {
+              opacity: 0;
+          }
+      }
     }
-
-
-
-
+  }
 }

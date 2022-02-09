@@ -2,14 +2,26 @@ import "./intro.scss"
 
 export default function Intro() {
     return (
-        <div className="intro" id="intro">
-            <div className="left">
-                <div className="imageContainer">
-                    <img src="assets/portfolio_picture.png" alt="" />
+        <div className="intro" id="intro">{/* This is the intro element that defines the whole page*/}
+            <div className="left"> {/*within in the intro element there is a left element stored in there */}
+                <div className="imageContainer"> 
+                    <img src="assets/portfolio_picture.png" alt="" />{/*and within that element is an another element which holds the image we use */}
                 </div>
             </div>
-            <div className="right"></div>
-            
+            <div className="right">{/*This section is the right side of the page we are working on */}
+                <div className="wrapper">{/*within this section there is a wrapper class that is basically introducing myself as a junior developer */}
+                    <h2>Hi there, I am</h2>
+                    <h1>Peter Graeson</h1>{/*h1 tends to be the main title and any incriment of that becomes smaller in size */}
+                    <h3>Junior<span></span></h3>
+                </div>
+                <a href="#portfolio"> {/*This is an anchor element that pretains to the portfolio section of our website */}
+                    <img src="assets/down.png" alt="" /> {/*within in the anchor element we are using an arrow pointed down image */}
+                </a>
+            </div>
+          
         </div>
     )
 }
+// additionall comments
+// if you want to create a class quickly use the . and the name for the class for example .hello will create --> <div className="hello"></div>
+// granted this only works if you are using the ES7+ React extension
