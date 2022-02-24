@@ -1,6 +1,18 @@
 import "./intro.scss"
+import { init } from 'ityped'
+import { useEffect, useRef } from "react"
 
 export default function Intro() {
+
+    const textRef = useRef();
+
+    useEffect(()=>{
+        init(textRef.current, { 
+            showCursor: false, 
+            typeSpeed: 150, //changes typing speed so its a bit more realistic lookin
+            strings: [' React Developer', 'Designer' ] })
+    },[])
+
     return (
         <div className="intro" id="intro">{/* This is the intro element that defines the whole page*/}
             <div className="left"> {/*within in the intro element there is a left element stored in there */}
@@ -12,7 +24,7 @@ export default function Intro() {
                 <div className="wrapper">{/*within this section there is a wrapper class that is basically introducing myself as a junior developer */}
                     <h2>Hi there, I am</h2>
                     <h1>Peter Graeson</h1>{/*h1 tends to be the main title and any incriment of that becomes smaller in size */}
-                    <h3>Junior <span></span></h3>
+                    <h3>Junior <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio"> {/*This is an anchor element that pretains to the portfolio section of our website */}
                     <img src="assets/down.png" alt="" /> {/*within in the anchor element we are using an arrow pointed down image */}

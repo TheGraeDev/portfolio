@@ -1,2 +1,5 @@
 Seperating each part of the website into different components made it easier to 
-see how the website works
+see how the website works as different pieces that is eventualy put together.
+
+The intro section is supposed to be a quick intro to who I am as a developer and
+as a designer. 
