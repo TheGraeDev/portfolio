@@ -46,6 +46,21 @@
           font-size: inherit; // inherits the font size from h3 since span is within the 
           color: rgb(14, 147, 255); //Changes the colour of the font to this blue thing
         }
+        .ityped-cursor{
+          animation: blink 1s infinite;
+        }
+        @keyframes blink {
+
+          50%{
+            opacity: 1;
+          }
+          // this is done to allow the cursor to animate correctly like a normal cursor. So that the cursor doesn't blink rapidly, by 
+          // slowly increasing the opacity from 1 to 0
+          100%{
+            opacity: 0;
+          }
+
+        }
       }
     }
 

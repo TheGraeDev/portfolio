@@ -8,9 +8,9 @@ export default function Intro() {
 
     useEffect(()=>{
         init(textRef.current, { 
-            showCursor: false, 
+            showCursor: true, 
             typeSpeed: 150, //changes typing speed so its a bit more realistic lookin
-            strings: [' React Developer', 'Designer' ] })
+            strings: ['Developer','React Developer', 'Designer' ] })
     },[])
 
     return (
