@@ -15,7 +15,7 @@
       img {
         //gives you finer control of the image itself so you can edit it to fit the square as you see fit
         width: 100%;
-        height: 90%; // reduced the size down due to the image being a little to tall
+        height: 97%; // reduced the size down due to the image being a little to tall
       }
     }
   }
@@ -41,6 +41,9 @@
       }
       h3 {
         font-size: 30px;
+        span{
+          font-size: inherit; // inherits the font size from h3 since span is within the 
+        }
       }
     }
 

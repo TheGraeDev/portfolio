@@ -1,0 +1,2 @@
+Seperating each part of the website into different components made it easier to 
+see how the website works
