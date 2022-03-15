@@ -4,12 +4,12 @@ export default function Portfolio() {
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
-            <ul>
+            <ul> {/*Listing the categories in which my work will be displayed */}
                 <li className="active">Featured</li>
                 <li>Web App</li>
                 <li>Unity Project</li>
                 <li>Mobile App</li>
-            </ul>
+            </ul> 
             <div className="container">
                 <div className="item">
                     <img src="https://p7.hiclipart.com/preview/524/532/32/unity-video-games-minecraft-handheld-devices-video-game-development-minecraft.jpg" alt="" />
