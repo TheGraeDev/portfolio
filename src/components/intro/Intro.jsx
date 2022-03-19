@@ -6,18 +6,22 @@ export default function Intro() {
 
     const textRef = useRef();
 
-    useEffect(()=>{
-        init(textRef.current, { 
-            showCursor: true, 
+    useEffect(() => {
+        init(textRef.current, {
+            showCursor: true,
             typeSpeed: 150, //changes typing speed so its a bit more realistic lookin
-            strings: ['Developer','React Developer', 'Designer' ] })
-    },[])
+            strings: ['Developer', 'React Developer', 'Designer']
+        })
+    }, [])
 
     return (
         <div className="intro" id="intro">{/* This is the intro element that defines the whole page*/}
             <div className="left"> {/*within in the intro element there is a left element stored in there */}
-                <div className="imageContainer"> 
-                    <img src="assets/portfolio_picture.png" alt="" />{/*and within that element is an another element which holds the image we use */}
+                <div className="imageContainer">
+                    <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortWaved&accessoriesType=Prescription01&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue02&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=DarkBrown' alt=""
+                    /> {/*Changed the front image to that of an avatar using this io and adapted to
+                          match the code*/}
+                    {/*<img src="assets/portfolio_picture.png" alt="" />*/}{/*and within that element is an another element which holds the image we use */}
                 </div>
             </div>
             <div className="right">{/*This section is the right side of the page we are working on */}
@@ -30,7 +34,7 @@ export default function Intro() {
                     <img src="assets/down.png" alt="" /> {/*within in the anchor element we are using an arrow pointed down image */}
                 </a>
             </div>
-          
+
         </div>
     )
 }
