@@ -18,7 +18,7 @@ export default function Intro() {
         <div className="intro" id="intro">{/* This is the intro element that defines the whole page*/}
             <div className="left"> {/*within in the intro element there is a left element stored in there */}
                 <div className="imageContainer">
-                    <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortWaved&accessoriesType=Prescription01&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue02&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=DarkBrown' alt=""
+                    <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortWaved&accessoriesType=Prescription01&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Blue01&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=DarkBrown' alt=""
                     /> {/*Changed the front image to that of an avatar using this io and adapted to
                           match the code*/}
                     {/*<img src="assets/portfolio_picture.png" alt="" />*/}{/*and within that element is an another element which holds the image we use */}

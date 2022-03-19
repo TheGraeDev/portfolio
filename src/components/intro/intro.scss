@@ -4,25 +4,29 @@
 
   .left {
     // i believe this is calling the class that was created in the intro.jsx file called "left"
-    flex: 0.55; //flex basically controls how the item we created fills the space we created; in this case it occupies half
+    flex: 0.5; //flex basically controls how the item we created fills the space we created; in this case it occupies half
     overflow: hidden; //if the image is overflowing this hides that and only shows a set part of the image
 
     .imageContainer {
       // this section practically contains the size of the image and you can control its height and width
       width: 1000px;
       height: 1000px;
-      
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      // the 3 lines of code above is essentially controlling the image of the avatar
+      // and brought it more downward to the page
 
       img {
         //gives you finer control of the image itself so you can edit it to fit the square as you see fit
-        width: 75%;
-        height: 75%; // reduced the size down due to the image being a little to tall
+        width: 85%;
+        height: 85%; // reduced the size down due to the image being a little to tall
       }
     }
   }
 
   .right {
-    flex: 0.45; // it controls how much space is used in the area we have created
+    flex: 0.5; // it controls how much space is used in the area we have created
     position: relative;
 
     .wrapper {
